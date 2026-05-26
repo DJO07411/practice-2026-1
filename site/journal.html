@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал проекта | Новости и прогресс</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">МосПолитех <span>| TaskFlow</span></div>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О проекте</a>
+                <a href="team.html">Участники</a>
+                <a href="journal.html" class="active">Журнал</a>
+                <a href="resources.html">Ресурсы</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1><i class="fas fa-newspaper"></i> Журнал прогресса</h1>
+        <div class="timeline">
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <div class="badge"><i class="far fa-calendar-alt"></i> 10 марта 2025</div>
+                <h3>✅ Проведён аудит IT-инфраструктуры и определены ключевые проблемы</h3>
+                <p>Команда аналитиков завершила аудит старого и нового ЛК, а также СДО на базе Moodle. Выявлена критическая необходимость в едином менеджере задач и оптимизации интерфейса. Составлен отчёт с сильными и слабыми сторонами.</p>
+                <img src="https://placehold.co/800x300/f0f2f5/1e293b?text=Анализ+сервисов+МосПолитеха" alt="анализ диаграмма" style="width:100%; border-radius: 16px; margin-top: 12px;">
+            </div>
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <div class="badge"><i class="far fa-calendar-alt"></i> 28 марта 2025</div>
+                <h3>📐 Проектирование и прототип редизайна IT-инфраструктуры</h3>
+                <p>Созданы прототипы новых модулей: менеджер задач, конструктор курсов, редизайн календаря. Утверждена стилистика и палитра личного кабинета. Распределены роли в разработке. Начата интеграция между существующими сервисами.</p>
+                <div style="background: #eef2ff; padding: 1rem; border-radius: 1rem; text-align: center;"><i class="fas fa-figma"></i> Figma-макет главного экрана менеджера задач одобрен фокус-группой.</div>
+            </div>
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <div class="badge"><i class="far fa-calendar-alt"></i> 18 апреля 2025</div>
+                <h3>⚙️ Разработка MVP: первый запуск менеджера задач</h3>
+                <p>Команда разработки представила рабочую версию менеджера задач с возможностью создания, назначения и отслеживания дедлайнов. Интегрирован календарь и диаграмма Ганта. Проведены первые нагрузочные тесты. Обсуждается подача заявки в реестр отечественного ПО.</p>
+                <p><strong>Продуктовый результат:</strong> новая база данных, API для совместимости ЛК и СДО, оптимизация скорости загрузки.</p>
+                <i class="fas fa-chart-line"></i> Ускорение бэкенда: +35% производительности.
+            </div>
+            <div class="card">
+                <div class="badge"><i class="far fa-calendar-alt"></i> 15 мая 2025 (план)</div>
+                <h3>🎯 Запуск пилотной версии для группы студентов</h3>
+                <p>Планируется внедрение продукта в тестовую эксплуатацию среди 200 студентов. Сбор обратной связи, доработка интерфейса, подготовка документов для Минцифры. Дорожная карта выполнена на 80%.</p>
+                <div class="hero" style="margin-top: 10px;">✨ Новые инструменты: конструктор курсов, умный дедлайн, виджет "Моя загрузка".</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;"><i class="fas fa-chart-simple"></i> Следите за обновлениями — каждый месяц публикуем отчёты о прогрессе!</div>
+    </main>
+    <footer class="footer">
+        <p>© 2025 Журнал проекта — три этапа успешно завершены</p>
+    </footer>
+</body>
+</html>
