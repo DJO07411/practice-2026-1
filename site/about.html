@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте | Менеджер задач - МосПолитех</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">МосПолитех <span>| TaskFlow</span></div>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html" class="active">О проекте</a>
+                <a href="team.html">Участники</a>
+                <a href="journal.html">Журнал</a>
+                <a href="resources.html">Ресурсы</a>
+            </div>
+        </div>
+    </nav>
 
+    <main class="container">
+        <h1><i class="fas fa-info-circle"></i> О проекте</h1>
+        <div class="hero">
+            <p style="font-size: 1.2rem;"><strong>Менеджер задач для ЛК Московского Политеха</strong> — это комплексная инициатива по редизайну IT-инфраструктуры университета. Мы создаём единую цифровую экосистему, которая объединяет старый и новый личные кабинеты, систему дистанционного обучения (СДО) и добавляет мощные инструменты: менеджер задач, конструктор курсов, диаграмму Ганта и умный календарь.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3><i class="fas fa-exclamation-triangle"></i> Проблематика</h3>
+                <p>• Старый ЛК с устаревшим интерфейсом.<br>• Новый ЛК с несовершенной функциональностью.<br>• Moodle требует улучшений, не входит в реестр отечественного ПО.<br>• Разрозненность сервисов создаёт сложности для студентов и преподавателей.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-bullseye"></i> Цели и задачи</h3>
+                <p><strong>Цель:</strong> Редизайн IT-инфраструктуры через внедрение менеджера задач и новых инструментов.<br><strong>Задачи:</strong> Анализ и аудит, проектирование прототипа, разработка функциональных модулей, интеграция существующих сервисов, импортозамещение и подача в реестр Минцифры.</p>
+            </div>
+        </div>
+
+        <h2>🎯 Ключевые инновации</h2>
+        <div class="grid-2">
+            <div class="card"><i class="fas fa-database" style="font-size: 2rem; color:#c00e2e;"></i> <h3>Новая база данных</h3><p>Эффективное хранение данных, оптимизация бэкенда для ускорения работы системы.</p></div>
+            <div class="card"><i class="fas fa-palette"></i> <h3>Редизайн UI/UX</h3><p>Обновленная стилистика и палитра, эстетичный и интуитивно понятный интерфейс.</p></div>
+            <div class="card"><i class="fas fa-link"></i> <h3>Совместимость ЛК+СДО</h3><p>Единая точка входа, бесшовная интеграция дистанционного обучения и личного кабинета.</p></div>
+            <div class="card"><i class="fas fa-chart-gantt"></i> <h3>Менеджер задач + Гант</h3><p>Планирование учебных процессов, дедлайны, конструктор курсов и календарь нового поколения.</p></div>
+        </div>
+
+        <!-- визуализация графика рисков / диаграмма -->
+        <h2>📊 Анализ рисков (график оценки)</h2>
+        <div style="max-width: 600px; margin: 1rem 0 2rem 0; background: white; padding: 1rem; border-radius: 1.5rem;">
+            <canvas id="riskChart" width="400" height="300" style="width:100%; height:auto; max-height:300px"></canvas>
+            <p class="caption">Риски: игнорирование проекта, техническая нагрузка, экономические затраты (кадровые).</p>
+        </div>
+
+        <div class="hero" style="background: #fef2e8;">
+            <i class="fas fa-medal"></i> <strong>Импортозамещение:</strong> Поскольку Moodle не может быть внесен в реестр Минцифры, наше решение предлагает альтернативу для работы в условиях «белого списка» и полностью отечественный продукт.
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2025 Менеджер задач | Московский Политех. Проектная деятельность.</p>
+    </footer>
+    <script>
+        window.onload = () => {
+            const ctx = document.getElementById('riskChart')?.getContext('2d');
+            if(ctx) {
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Риск игнорирования', 'Техническая нагрузка', 'Экономические риски'],
+                        datasets: [{
+                            label: 'Вероятность / Влияние (оценка)',
+                            data: [65, 45, 30],
+                            backgroundColor: ['#c00e2e', '#f59e0b', '#3b82f6'],
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: { legend: { position: 'top' } }
+                    }
+                });
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</body>
+</html>
