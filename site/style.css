@@ -1,1 +1,107 @@
+/* style.css — единый стиль для всех страниц */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+.navbar {
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #1e3c72, #2b3b6e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -0.3px;
+}
+
+.logo span {
+    background: none;
+    color: #c00e2e;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1e293b;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #c00e2e;
+    border-bottom: 2px solid #c00e2e;
+    padding-bottom: 4px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.hero {
+    background: linear-gradient(105deg, #ffffff 0%, #f1f5f9 100%);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+    border: 1px solid #e2edff;
+}
+
+.badge {
+    background: #c00e2e10;
+    color: #b91c1c;
+    padding: 0.3rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+    border-left: 5px solid
